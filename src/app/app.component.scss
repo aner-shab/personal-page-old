@@ -158,3 +158,44 @@ position: fixed;
   display: grid;
   justify-content: center;
 }
+
+.mobileWindow {
+  width: 100%;
+  padding-bottom:2em;
+  opacity: 0.97;
+  background-color: #272822;
+  box-shadow: 10px 10px 30px -10px darkslateblue;
+  color: whitesmoke;
+  border-radius: 2em;
+}
+.mobileWindow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mobileText{
+  font-family: Consolas;
+  float:left;
+  margin-left:5%;
+  //width: 100%;
+  display: inline-block;
+}
+.mobileTextIntro{
+  margin-left:5%;
+  margin-right:5%;
+  width: 60%;
+}
+.pixelface-mobile{
+  float: left;
+  display: inline-block;
+  width:30%;
+  height: 0;
+  background-image: url("../assets/pixelatedme.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 25%;
+  border-bottom-left-radius:2.1em;
+  border-top-right-radius:2.1em;
+  opacity: 0.7;
+}

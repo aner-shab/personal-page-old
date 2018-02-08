@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   @ViewChild('email') email: ElementRef;
   @ViewChild('terminalWrapper') terminal: ElementRef;
 
+  isMobile: boolean;
   cmdHistory: string[] = [];
   currentType: string = "";
   currentDir: string = "C:\\";
@@ -27,11 +28,23 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(){
-    setTimeout(()=>{
-    this.cmdLine.nativeElement.focus();
-    this.activeDir.initRoot();
-    },100);
+    this.isMobile = this.isMobileDevice();
+
+    console.log(this.isMobile);
+
+    if (!this.isMobile) {
+      setTimeout(() => {
+        this.cmdLine.nativeElement.focus();
+        this.activeDir.initRoot();
+      }, 100);
+    }
   }
+
+  isMobileDevice(): boolean {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      return true;
+    }
+   }
 
   focus(){
     this.cmdLine.nativeElement.focus();

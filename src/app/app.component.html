@@ -25,8 +25,7 @@
   </div>
 </div>
 
-<div #terminalWrapper class="terminal-wrapper" (click)="focus()" id="terminal-wrapper">
-
+<div *ngIf="!isMobile" #terminalWrapper class="terminal-wrapper" (click)="focus()" id="terminal-wrapper">
 <div #menu *ngIf="!pongActive" class="menu">
   <div class="pixelface"></div>
   <div class="logo">
@@ -57,5 +56,17 @@
     <app-pong></app-pong>
   </div>
 </div>
+
+
+<div *ngIf="isMobile">
+  <div class="mobileWindow">
+    <p class="mobileText mobileTextIntro">Hi there!<br><br>
+      My name is Aner, and I am what they call a Full-Stack software developer hailing from a quiet little kibbutz in Israel.<br><br></p>
+    <div class="pixelface-mobile"></div>
+    <p class="mobileText" >I have experience ranging from low-level systems and automated solutions, to web applications and mobile apps!<br><br>
+      This site is much cooler on desktop, you should check it out!</p>
+  </div>
+</div>
+
 
 

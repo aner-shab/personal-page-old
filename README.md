@@ -1,4 +1,7 @@
-# PersonalPage
+# Personal Page
+
+Hi there! Jus riffing with Angular 2/4/5/whatever. 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 

@@ -1,0 +1,12 @@
+
+<div>
+
+  <div class="scoreboard">SCOREBOARD<br>
+  You: {{scorePlayer}}
+  CPU: {{scoreComputer}}</div>
+  <input #movement class="invisible" (keydown)="keyDown($event)" (keyup)="keyUp($event)" autofocus>
+  <div class="screen-border">
+  <canvas  class="screen" #canvas>
+  </canvas>
+  </div>
+</div>

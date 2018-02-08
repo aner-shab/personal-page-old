@@ -1,0 +1,160 @@
+.background{
+position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/bg2.jpg");
+}
+
+.toolbar{
+  height: 10%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  align-items: center;
+  width:100%;
+  max-width: 60em;
+}
+
+.toolbar-button{
+  width: 85px;
+  max-width:85px;
+  height:78px;
+  max-height:78px;
+  margin-bottom:0.25em;
+  font-size:3em;
+  font-family: Calibri;
+}
+
+.toolbar-icon{
+  margin: 0 auto;
+  vertical-align: middle;
+  background-size: contain;
+  max-width:75px;
+  width: 75px;
+  height: 75px;
+  background-repeat:no-repeat;
+}
+
+.icon-linkedin{
+  background-image: url("../assets/linkedin.svg");
+}
+
+.icon-github{
+  background-image: url("../assets/github.svg");
+}
+
+.icon-contact{
+  background-image: url("../assets/contact.png");
+}
+
+.icon-cv{
+  background-image: url("../assets/cv.svg");
+}
+
+.wordwrap {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.pixelface{
+  background-image: url("../assets/pixelatedme.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 164px;
+  max-height:164px;
+  width:196px;
+  max-width:196px;
+  float:right;
+  border-bottom-left-radius:2em;
+  opacity: 0.7;
+}
+
+.terminal-wrapper{
+  border-radius: 2em;
+  margin: 0 auto;
+  background-color: #272822;
+  color: whitesmoke;
+  font-family: Consolas;
+  height: 50em;
+  max-width: 60em;
+  font-size:1em;
+  overflow-y: auto;
+  opacity:0.97;
+  box-shadow: 10px 10px 30px -10px darkslateblue;
+}
+
+.terminal{
+  margin-left:0.2em;
+  font-family: Consolas;
+  overflow: auto;
+  margin-bottom:1em;
+}
+
+.history{
+  margin: 0;
+  font-family: Consolas;
+}
+
+.logo{
+  margin-left:3.2em;
+  line-height:0.2;
+}
+
+.cursor{
+  position: sticky;
+}
+
+.command-init{
+  float:left;
+}
+
+.command-line{
+  font-size:1em;
+  float:left;
+  outline: none;
+  padding: 0;
+  border: 0;
+  background-color: #272822;
+  color: transparent;
+  text-shadow: 0 0 0 whitesmoke;
+  font-family: Consolas;
+}
+
+.blink {
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: whitesmoke;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #8BC42A;
+  }
+}
+
+.menu{
+  display: unset;
+}
+
+.pongMenu{
+  display: grid;
+  justify-content: center;
+}

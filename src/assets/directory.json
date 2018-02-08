@@ -1,0 +1,56 @@
+[
+  {
+    "name": "about",
+    "type": 0,
+    "extension": ".txt",
+    "contents": [" ","Hi there!"," ","My name is Aner, and I am what they call a Full-Stack software developer hailing from a quiet little kibbutz in Israel. I have experience ranging from low-level systems and automated solutions, to web applications and mobile apps!",
+    " ","If you're here, you must have taken some interest in me. Go ahead and explore this site, and let me know what you think about this little corner of the web!"," "]
+  },
+  {
+    "name": "contact",
+    "type": 0,
+    "extension": ".txt",
+    "contents": [" ","Here are some ways to contact me:"," ","Email Address:    aner.shab <at> gmail [dot] com","LinkedIn:         http://www.linkedin.com/in/aner-shabtai/"," ","You can also mail me directly by clicking the icon at the top right of the page!"]
+  },
+  {
+    "name": "CV",
+    "type": 1,
+    "contents":[
+      {
+        "name": "projects",
+        "type": 0,
+        "extension": ".txt",
+        "contents": ["Hey! this is a file inside a directory"]
+      },
+      {
+        "name": "skills",
+        "type": 0,
+        "extension": ".txt",
+        "contents": [" ","Programming languages:","   JavaScript, TypeScript, C#, SQL",
+          "   C++, Java, Objective-C"," ", "Frameworks:","   Angular 2+, AngularJS, React.js","   Cordova (PhoneGap), Ionic",
+          "   .NET, .NET Core, Spring", " ","DevOps:","   Docker, Jenkins"," "]
+      },
+      {
+        "name": "technologies",
+        "type": 0,
+        "extension": ".txt",
+        "contents": [" ","Thanks to previous work and projects, I have varying degrees of experience in the following technologies:"," ",
+        "   GIS and GNSS Systems","   Computer Vision",
+        "   CAD software","   PLC programming", " "]
+      }
+    ]
+  },
+  {
+    "name": "games",
+    "type": 1,
+    "contents": [
+      {
+        "name": "pong",
+        "type": 0,
+        "extension": ".exe",
+        "contents": [" "]
+      }
+    ]
+  }
+]
+

@@ -1,20 +1,61 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+
+<div class="background"></div>
+
+<div class="toolbar">
+  <div class="toolbar-button">
+    <a href="">
+      <div class="toolbar-icon icon-cv"></div>
+    </a>
+  </div>
+  <div class="toolbar-button">
+    <a href="http://www.linkedin.com/in/aner-shabtai/">
+    <div class="toolbar-icon icon-linkedin"></div>
+    </a>
+  </div>
+  <div class="toolbar-button">
+    <a href="">
+    <div class="toolbar-icon icon-github"></div>
+    </a>
+  </div>
+  <div class="toolbar-button">
+    <a #email href="" (click)="onEmailClick()">
+      <div class="toolbar-icon icon-contact"></div>
+  </a>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<div #terminalWrapper class="terminal-wrapper" (click)="focus()" id="terminal-wrapper">
+
+<div #menu *ngIf="!pongActive" class="menu">
+  <div class="pixelface"></div>
+  <div class="logo">
+  <pre>                              _____ _           _     _        _ </pre>
+  <pre>     /\                      / ____| |         | |   | |      (_)</pre>
+  <pre>    /  \   _ __   ___ _ __  | (___ | |__   __ _| |__ | |_ __ _ _ </pre>
+  <pre>   / /\ \ | '_ \ / _ \ '__|  \___ \| '_ \ / _` | '_ \| __/ _` | |</pre>
+  <pre>  / ____ \| | | |  __/ |     ____) | | | | (_| | |_) | || (_| | |</pre>
+  <pre> /_/    \_\_| |_|\___|_|    |_____/|_| |_|\__,_|_.__/ \__\__,_|_|</pre>
+  <pre>                                                                 </pre>
+  <pre>                                                   v31 Build 1986</pre>
+  <pre>                                   aner.shab (at) gmail (dot) com</pre>
+  <pre>                                                                 </pre>
+  <pre>Type "help" to get started....                                   </pre>
+  </div>
+    <div class="terminal" id="terminal">
+
+      <div id="history">
+        <pre class="history wordwrap"  *ngFor="let item of cmdHistory">{{item}}</pre>
+      </div>
+
+      <span class="command-init">{{currentDir}}></span>
+      <input spellcheck="false" #cmd [style.width.em]="cmdWidth" class="command-line" [(ngModel)]="currentType" type="text" (keydown)="keyDown($event)"/>
+      <span class="cursor blink" id="cursor">&nbsp;</span>
+    </div>
+</div>
+  <div #pong *ngIf="pongActive" class="pongMenu">
+    <app-pong></app-pong>
+  </div>
+</div>
+
 

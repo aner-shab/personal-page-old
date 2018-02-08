@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+.screen{
+  margin-top:5px;
+}
+.screen-border{
+  width: 410px;
+  height: 510px;
+  text-align: center;
+  background:greenyellow;
+}
+.scoreboard{
+  width: 410px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+
+}
+
+.invisible{
+  width: 400px;
+  height: 500px;
+  opacity: 0;
+  background: red;
+  color: transparent;
+  border: transparent;
+  outline: transparent;
+  cursor: default;
+  position:absolute;
+}
+
